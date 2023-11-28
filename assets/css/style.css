@@ -1191,23 +1191,43 @@ section {
   text-transform: uppercase;
 }
 
-.pricing .featured {
+.pricing .featured:hover {
   background: #009cea;
   border-color: #009cea;
+  transform: scale(1.1);
+
 }
 
-.pricing .featured h3,
-.pricing .featured h4,
-.pricing .featured h4 span,
-.pricing .featured ul,
-.pricing .featured ul .na {
+.pricing .featured:hover h3,
+.pricing .featured:hover h4,
+.pricing .featured:hover h4 span,
+.pricing .featured:hover ul,
+.pricing .featured:hover ul .na {
   color: #fff;
+
 }
 
-.pricing .featured .btn-buy {
+.pricing .featured:hover .btn-buy {
   background: #fff;
   color: #009cea;
 }
+
+.featured {
+  transition: all 5s ease-in-out;
+  -webkit-transition: all 5s ease-in-out;
+  -moz-transition: all 5s ease-in-out;
+  -ms-transition: all 5s ease-in-out;
+  -o-transition: all 5s ease-in-out;
+}
+
+/* .clients .client-logo:hover img {
+  filter: none;
+  transform: scale(1.1);
+}
+
+.clients img {
+  transition: all 0.4s ease-in-out;
+} */
 
 .pricing .advanced {
   width: 200px;
